@@ -1,28 +1,35 @@
-import logo from "./logo.png"
-import './App.css';
-import Dictionary from "./Dictionary";
+import Dictionary from './Dictionary';
 
-export default function App() {
+import './App.css';
+
+function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className='container'>
         <header className="App-header">
-            <img src={logo} className="App-logo img-fluid"
-        alt="logo" />
-          <h1> 📚 Dictionary 📚</h1>
+          <h1>Dictionary</h1>
         </header>
         <main>
           <Dictionary />
         </main>
-         <footer className=" App-footer text-center">
-        2023, React - {" "} 
-        <a href="https://github.com/carmenavalhas/dictionary-react">open source</a> ⎪ coded by {" "}
-        <a href="https://carmenavalhas-portfolio.netlify.app/">Carmen Navalhas</a>
-      </footer>
+       <footer class="ps-5 pe-5">
+          <div class="row d-flex justify-content-center">
+             <div class="col-lg-6">
+            2023, open {" "}
+            <a 
+            href="https://github.com/carmenavalhas/dictionary-react" 
+            target="_blank"
+            rel="noopener noreferrer">source</a>
+             {" "} ⎪ coded by {" "}
+            Carmen Navalhas
+          </div>
+          </div>
+              </footer>
+
+
       </div>
     </div>
   );
 }
 
-
-    
+export default App;
