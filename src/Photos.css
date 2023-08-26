@@ -2,4 +2,16 @@
   border-radius: 4px;
   margin-bottom: 15px;
   margin-top: 15px;
+  box-shadow: #a69b87;
+  transition: 200ms all ease-in-out;
+}
+
+.Photos img:hover {
+  transform: scale(1.15);
+}
+
+.Photos {
+font-size: 18px;
+font-weight: 600;
+font-family: 'Jost', sans-serif;
 }

@@ -1,3 +1,7 @@
+// import logo from "./logo.png"; //
+// -----> put where I want to appear: <------ //
+// <img src={logo} className="App-logo" alt="logo" /> //
+
 import Dictionary from './Dictionary';
 
 import './App.css';
@@ -7,10 +11,10 @@ function App() {
     <div className="App">
       <div className='container'>
         <header className="App-header">
-          <h1>Dictionary</h1>
+          <h1 className='pb-4'>DICTIONARY</h1>
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="aesthetic" />
         </main>
        <footer class="ps-5 pe-5">
           <div class="row d-flex justify-content-center">
